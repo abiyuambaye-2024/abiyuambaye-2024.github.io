@@ -150,21 +150,63 @@ ul.list-unstyled {
   padding-left: 0;
   font-size: 1rem;
 }
+.tech-box-section {
+  background-color: #f8f8f8;
+  padding: 50px 30px 30px;
+  border: 2px solid #800020;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(128, 0, 32, 0.1);
+  position: relative;
+}
+
+.tech-heading {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f8f8;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #800020;
+  border: 2px solid #800020;
+  border-radius: 30px;
+}
+
+.tech-box {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .btn-tech {
+  width: 150px;            /* Fixed width */
+  height: 45px;            /* Fixed height for uniform look */
   background-color: #f5f5f5;
   border: 2px solid #800020;
   color: #800020;
-  font-weight: 500;
-  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  padding: 10px 15px;
   border-radius: 30px;
   transition: all 0.3s ease;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-tech:hover {
   background-color: #800020;
   color: #fff;
-  text-decoration: none;
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.05);
 }
 
+
+@media (max-width: 600px) {
+  .btn-tech {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
